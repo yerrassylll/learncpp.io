@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Learn C++</title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+
+<section class="lesson-section">
+    <div class="video-container">
+        <video autoplay muted loop playsinline> 
+        	<source src="video/firstVideoBg.mp4">
+        </video>
+    </div>
+
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-xl-12 mainContent">
+
+			<div class="aboutContent aboutWebsite">
+				<p class="lessonTitle">На данном сайте содержаться моё изучение языка программирование С++ по курсу на канале youtube Yuriorkis Scream</p>
+			</div>
+
+
+			<div class="aboutContent">
+				<p class="lessonTitle">Название урока: </p>
+				<p class="lessonDescription">#2 Бит - минимальная единица информации.</p>
+			</div>
+
+			<div class="aboutContent">
+				<p class="lessonTitle">Ссылка: </p>
+				<p class="lessonDescription">
+					<a href="https://www.youtube.com/watch?v=3veBcObAnAg&list=PL2UHGvA7LrvN8L6C374kW5-cLnxnPyRSE&index=2">2 Бит - минимальная единица информации</a>
+				</p>
+			</div>
+
+			<div class="row blockCode">
+				<div class="col-xl-3 notes">
+					<div class="innerContent">
+						Второй урок это про основы компьютерных наук, про байт и биты и что 1 и 0 это абстракция, в целом это input и output. В книге 1 главы про комп. науки написано тоже самое бит - минимальная единица хранение информации 1 байт = 8 битов
+
+					</div>
+
+				</div>
+				<div class="col-xl-5 codeCpp">
+					<div class="innerContent">
+					<pre>
+						<code class="language-cpp">
+int variableOne = 10;
+int variableTwo = 5;
+//int result = variableOne + variableTwo;
+int result;
+
+float variableThree = 3.14;
+
+bool flag = true;
+
+double variableNewCopy = 5.44444444444444444;
+
+char variableNewType = 'a';
+
+result = variableOne * variableTwo;
+
+std::cout << result << std::endl;
+
+std::cout << variableThree << std::endl;
+
+std::cout << variableNewCopy << std::endl;
+
+std::cout << variableNewType << std::endl;
+						</code>
+					</pre>
+
+					</div>
+				</div>
+				<div class="col-xl-4 debugCodeCpp">
+					<div class="innerContent">
+					<pre>
+						<code class="language-cpp">
+int variableOne = 10;
+int variableTwo = 5;
+//int result = variableOne + variableTwo;
+int result;
+
+float variableThree = 3.14;
+
+bool flag = true;
+
+double variableNewCopy = 5.44444444444444444;
+
+char variableNewType = 'a';
+
+result = variableOne * variableTwo;
+
+std::cout << result << std::endl;
+
+std::cout << variableThree << std::endl;
+
+std::cout << variableNewCopy << std::endl;
+
+std::cout << variableNewType << std::endl;
+						</code>
+					</pre>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</section>
+
+
+<section class="lesson-section">
+    <div class="video-container">
+        <video autoplay muted loop playsinline> 
+        	<source src="video/secondVideo.mp4">
+        </video>
+    </div>
+    <div class="container-fluid"> 
+
+	<div class="row">
+		<div class="col-xl-12 mainContent">
+
+			<div class="aboutContent">
+				<p class="lessonTitle">Название урока: </p>
+				<p class="lessonDescription">3 Фундаментальные(базовые) типы.</p>
+			</div>
+
+			<div class="aboutContent">
+				<p class="lessonTitle">Ссылка: </p>
+				<p class="lessonDescription">
+					<a href="https://www.youtube.com/watch?v=gBOR4uK44D4&list=PL2UHGvA7LrvN8L6C374kW5-cLnxnPyRSE&index=3">3 Фундаментальные(базовые) типы.</a>
+				</p>
+			</div>
+
+			<div class="row blockCode">
+				<div class="col-xl-3 notes">
+					<div class="innerContent">
+						<pre class="notesLessonThree">
+В данном видео рассказывается про типы в С++.
+С++ это типизированный ЯП (далее ЯП - язык программирование), 
+прежде чем обявить переменную, нужно указать тип, к примеру: 
+int variableOne = 10;
+
+Рассказывает про компилятор, как правильно нужно указывать 
+имя переменной и диапазон переменных. Но после понравилось 
+что, когда объявляем переменную, с помощью & можно найти 
+место хранение переменную, больше интересно, как это 
+посмотреть, а это вышло цифры и буквы
+
+базовые типы, фундаментальные типы
+int - цеовые чмсоа
+float - с плавающей точкой, 3.14
+boll - логический тип
+double как float, но диапазон больше
+
+Переменные и объявленные типы, имеют разный размер, 
+если объявляем интегральную переменную (int) имеет 
+размер 32 бита
+С++ - статически типизированный язык
+
+Все выражение в С++ указывается точкой запятой ;
+
+iostream - это библиотека,  std::cout - можем 
+использовать потому что это из библиотеки iostream
+
+#include - специальное ключевое слово, включить, подключить
+
+Компилятор - когда мы пишем код, то компилятор 
+транслирует на понятный код для процессора чтобы он выполнил
+
+std::endl - очищает буфер, переносит корретку на новую строку
+
+return 0; - чтобы программа отработала без ошибок
+
+& - оператор взятое адреса, позволяет посмотреть 
+где находиться переменная
+Диапазон переменных 
+
+						</pre>
+					</div>
+
+				</div>
+				<div class="col-xl-5 codeCpp">
+					<div class="innerContent">
+					<pre class="blockCodeLessonThree">
+						<code class="language-cpp">
+#include <iostream>
+#include <string>
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Привет мир!\n";
+
+    /* Задание: 1 */
+    //Проверка числа: Создай переменную int number. Если число больше 10, выведи "Большое", иначе выведи "Маленькое".
+
+    int number = 8;
+    std::string numberQuestOne = "Задание 1: ";
+
+    if (number > 10){
+        std::cout << numberQuestOne << "Большое\n" << std::endl;
+    } else {
+        std::cout << numberQuestOne << "Маленькое\n" << std::endl;
+    }
+
+    /* Задание: 2 */
+    //Четное или нечетное: (Тут понадобится оператор % — остаток от деления). Создай число. Если number % 2 равен 0, выведи "Четное", иначе — "Нечетное".
+    
+
+    int x = 29;
+    std::string numberQuestTwo = "Задание 2: ";
+
+    if (x % 2 == 0) {
+        std::cout << numberQuestTwo << "Четное\n" << std::endl;
+    }
+    else {
+        std::cout << numberQuestTwo << "Нечетное\n" << std::endl;
+    }
+
+    /* Задание: 3 */
+    /*Доступ: Создай переменную age. Если возраст 18 и больше, выведи "Доступ разрешен", если меньше — "Доступ запрещен".*/
+
+    int age = 16;
+    std::string numberQuestThree = "Задание 3: ";
+
+    if (age >= 18) {
+        std::cout << numberQuestThree << "Доступ разрешен\n" << std::endl;
+    } else {
+        std::cout << numberQuestThree << "Доступ запрещен\n" << std::endl;
+    }
+
+    /* Задание: 4 */
+    /*Светофор: Создай переменную int color (1 — красный, 2 — желтый, 3 — зеленый). 
+    Используя if, else if и else, выведи соответствующую команду ("Стой", "Жди", "Иди"). 
+    Если введено другое число, выведи "Светофор сломался".*/
+
+    int color = 2;
+    std::string numberQuestFourOne = "Задание 4-1: ";
+
+    if (color == 1) {
+        std::cout << numberQuestFourOne  << "Стой\n" << std::endl;
+    } else if (color == 2) {
+        std::cout << numberQuestFourOne << "Жди\n" << std::endl;
+    } else if (color == 3) {
+        std::cout << numberQuestFourOne << "Иди\n" << std::endl;
+    } else {
+        std::cout << numberQuestFourOne << "Выбери цифры от 1 до 3 и включи обратно\n" << std::endl;
+    }
+
+    // Решил переписать ещё через string
+
+    std::string colorTrafficLight = "зеленый";
+    std::string numberQuestFourTwo = "Задание 4-2: ";
+
+    if (colorTrafficLight == "красный") {
+        std::cout << numberQuestFourTwo << "Стой\n" << std::endl;
+    }
+    else if (colorTrafficLight == "желтый") {
+        std::cout << numberQuestFourTwo << "Жди\n" << std::endl;
+    }
+    else if (colorTrafficLight == "зеленый") {
+        std::cout << numberQuestFourTwo << "Иди\n" << std::endl;
+    }
+
+    /* Задание: 5 */
+    /*Максимум из двух: Создай две переменные a и b. Программа должна сравнить их и вывести, 
+    какое число больше. Если они равны, нужно вывести "Числа равны".*/
+
+    int a = 61;
+    int b = 61;
+    std::string numberQuestFive = "Задание 5: ";
+
+    if (a > b) {
+        std::cout << numberQuestFive << "A больше\n" << std::endl;
+    } else if (b > a) {
+        std::cout << numberQuestFive << "Б больше\n" << std::endl;
+    } else if (b == a) {
+        std::cout << numberQuestFive << "Числа равны\n" << std::endl;
+    }
+
+    /* Задание: 6 */
+    /*Магия нуля: Создай переменную int test = -5;. Напиши if (test), который выводит "Это истина", и else, который выводит "Это ложь". 
+    Проверь, что выведется для -5, для 10 и для 0.*/
+
+    int test = 0;
+    std::string numberQuestSix = "Задание 6: ";
+
+    if (test) {
+        std::cout << numberQuestSix << "Это истина\n" << std::endl;
+    } else {
+        std::cout << numberQuestSix << "Это ложь\n" << std::endl;
+    }
+
+    //var = -5 Output: Это истина - Почему вышла это истина?
+
+    //var = 10 Output: Это истина
+
+    //var = -5 Output: Это ложь
+
+    /* Задание: 7 */
+    /*
+    Калькулятор (мини): Создай три переменные: double n1, double n2 и int operation (1 — плюс, 2 — минус, 3 — умножить, 4 — делить). 
+    Напиши логику, которая выполняет нужное действие в зависимости от operation и выводит результат. Добавь проверку: если 
+    operation равен 4, а n2 равен 0, выведи ошибку "Делить на ноль нельзя!".
+    */
+    // Не смог сделать n2 равен 0, выведи ошибку "Делить на ноль нельзя!"
+
+    double n1 = 3.14;
+    double n2 = 0;
+
+    int operation = 4;
+    std::string numberQuestSeven = "Задание 7: ";
+
+    if (operation == 1) {
+        int result = n1 + n2;
+        std::cout << numberQuestSeven  << result << "\n" << std::endl;
+    } else if (operation == 2) {
+        int result = n1 - n2;
+        std::cout << numberQuestSeven << result << std::endl;
+    } else if (operation == 3) {
+        int result = n1 * n2;
+        std::cout << numberQuestSeven << result << std::endl;
+    } else if (operation == 4) {
+        if (n2 == 0) {
+            std::cout << numberQuestSeven << "Делить на ноль нельзя!\n" << std::endl;
+        } else {
+            int result = n2 / n1;
+            std::cout << numberQuestSeven << result << std::endl;
+        }
+    }
+
+    /* Задание: 8 */
+    /*
+    Вложенные условия: Создай переменную score (баллы от 0 до 100).
+    Если баллов 90 и выше — выведи "Отлично".
+    Если от 70 до 89 — выведи "Хорошо".
+    Если меньше 70, добавь внутри еще одну проверку: если баллов меньше 50 — выведи "Плохо, нужно пересдать", 
+    а если от 50 до 69 — "Удовлетворительно".
+    */
+
+    int score = 0;
+    std::cin >> score;
+    std::string numberQuestEight = "Задание 8: ";
+
+    if (score >= 90) {
+
+        std::cout << numberQuestEight << "Отлично\n" << std::endl;
+
+    } else if (score >= 70) {
+
+        std::cout << numberQuestEight << "Хорошо\n" << std::endl;
+
+    } else if (score < 70) {
+
+        if (score <= 69) {
+
+            std::cout << numberQuestEight << "Удовлетворительно\n" << std::endl;
+
+        }
+        else if (score <= 50) {
+
+            std::cout << numberQuestEight << "Плохо, нужно пересдать\n" << std::endl;
+
+        }
+        
+    } else {
+        std::cout << numberQuestEight << "Just do it\n" << std::endl;
+    }
+
+}
+						</code>
+					</pre>
+
+					</div>
+				</div>
+				<div class="col-xl-4 debugCodeCpp">
+					<div class="innerContent">
+					<pre>
+						<code class="language-cpp">
+int variableOne = 10;
+int variableTwo = 5;
+//int result = variableOne + variableTwo;
+int result;
+
+float variableThree = 3.14;
+
+bool flag = true;
+
+double variableNewCopy = 5.44444444444444444;
+
+char variableNewType = 'a';
+
+result = variableOne * variableTwo;
+
+std::cout << result << std::endl;
+
+std::cout << variableThree << std::endl;
+
+std::cout << variableNewCopy << std::endl;
+
+std::cout << variableNewType << std::endl;
+						</code>
+					</pre>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</section>	
+
+<section class="lesson-section">
+    <div class="video-container">
+        <video autoplay muted loop playsinline> 
+        	<source src="video/thirdVideo.mp4">
+        </video>
+    </div>
+    <div class="container-fluid"> 
+
+	<div class="row">
+		<div class="col-xl-12 mainContent">
+
+			<div class="aboutContent">
+				<p class="lessonTitle">Название урока: </p>
+				<p class="lessonDescription">4 Пространства имен (namespaces)</p>
+			</div>
+
+			<div class="aboutContent">
+				<p class="lessonTitle">Ссылка: </p>
+				<p class="lessonDescription">
+					<a href="https://www.youtube.com/watch?v=QXz4Hl2_5B0&list=PL2UHGvA7LrvN8L6C374kW5-cLnxnPyRSE&index=4">4 Пространства имен (namespaces)</a>
+				</p>
+			</div>
+
+			<div class="row blockCode">
+				<div class="col-xl-3 notes">
+					<div class="innerContent">
+						<pre>
+В данном видеоуроки автор рассказывает про различие 
+локальной переменной и глобальной также что можно 
+создать свою пространство имен через namespaces 
+и выводить это
+
+Область видимости - можем воспринимать как некоторое 
+пространство, ограниченное {} (далее фигурные скобки) 
+и в котором можем объявить переменные и т.д
+
+Функция main() - главная точка входа в программу, 
+с которой начинает выполнение программы и у неё 
+своя область видимости, ограниченная с {}
+
+Глобальная область видимости - это вся остальная 
+область видимости вне любой функции
+
+namespace - пространство имен, создаем свою 
+область видимости
+
+using namespace - чтобы получить к своему 
+созданному пространству имён и проще можем 
+обращаться к своим переменным
+
+						</pre>
+					</div>
+
+				</div>
+				<div class="col-xl-5 codeCpp">
+					<div class="innerContent">
+					<pre>
+						<code class="language-cpp">
+#include <iostream>
+
+namespace outNameSpace {
+
+	int var1 = 25;
+	double var2 = 6.67;
+	bool flag = true;
+	char varCh = 'y';
+
+	namespace outNamespaceInner {
+		int valueInner = 1465;
+	}
+
+}
+
+int value = 500; // Глобальная переменная
+
+//std::cout << value std::endl;
+
+int main()
+{
+	using namespace outNameSpace;
+	namespace ns = outNameSpace::outNamespaceInner; // упращенный доступ к своим namespace
+	std::cout << flag << std::endl;
+	std::cout << var2 << std::endl;
+	std::cout << varCh << std::endl;
+
+	std::cout << outNameSpace::var1 << std::endl; // Доступ к своему пространству имён 
+	//std::cout << outNameSpace::outNamespaceInner::valueInner << std::endl; // Доступ к вложенному namespace
+	std::cout << ns::valueInner << std::endl; // // упращенный доступ к своим namespace
+
+	int value = 100;
+	//std::cout << value << std::endl;
+	{
+		int value = 300;
+		// Если убрать int, то повлияем на перменную сверху и выйдет, 300
+		std::cout << value << std::endl;
+	}
+
+	std::cout << value << std::endl;
+
+	std::cout << ::value << std::endl; // Обращание к глобальная переменной и вывод
+
+	return 0;
+}
+						</code>
+					</pre>
+
+					</div>
+				</div>
+				<div class="col-xl-4 debugCodeCpp">
+					<div class="innerContent">
+					<pre class="codeBlock">
+						<code class="language-cpp">
+#include <iostream>
+
+namespace Erasyl {
+	int valueBirth = 1998;
+}
+
+namespace Math {
+	int x = 79;
+	int y = 99;
+}
+
+namespace Cats {
+	int countQuest = 33;
+}
+
+namespace Dogs {
+	int countQuest = 55;
+}
+
+namespace World {
+	namespace Country
+	{
+		int city = 101;
+	}
+}
+
+/* Задание 2 */
+	/*
+	Создай свое пространство имен (назови его своим именем, например namespace Alisher { ... }). 
+	Помести туда переменную с твоим годом рождения. Выведи её в main, используя оператор ::.
+	*/
+
+	/* Задание 3 */
+	/*
+		Объяви переменную int g = 100; ВНЕ функции main. Внутри main создай локальную int g = 1;. 
+		Выведи обе переменные (подсказка: для глобальной используй ::g).
+	*/
+
+	/* Задание 4 */
+	/*
+	Использование using: Создай namespace Math и положи туда две переменные: x и y. 
+	В функции main используй команду using namespace Math; и выведи сумму этих переменных без использования двоеточий.
+	*/
+
+	/* Задание 5 */
+	/*
+	Конфликт имен: Создай два разных пространства имен: Cats (с переменной count = 5) и 
+	Dogs (с переменной count = 3). В функции main выведи обе переменные. 
+	Попробуй добавить using namespace Cats; и посмотри, сможешь ли ты после этого легко вывести count из Dogs.
+	*/
+
+	/* Задание 6 */
+	/*
+	Вложенность: Создай пространство имен World, внутри него — Country, а внутри Country — переменную city со значением 
+	"Astana" (тип char или просто число, если строки еще не пробовал). Выведи её через полную цепочку World::Country::city.
+	*/
+
+int g = 100;
+
+int main()
+{
+	/* Задание 1 */
+	/*
+	Создай функцию main. В ней создай переменную int x = 5;. Ниже открой фигурные скобки { }, 
+	создай внутри еще одну int x = 10; и выведи её. После закрытия скобок выведи x еще раз. 
+	Проверь, какие значения напечатаются.
+	*/
+
+	int g = 1;
+
+	int x = 5; 
+	{
+		int x = 10;
+		std::cout << x << std::endl;
+		// Output: 10
+
+		int expoInner = 2017;
+	}
+
+	std::cout << expoInner << std::endl;
+	// идентификатор "expoInner" не определен
+
+	std::cout << x << std::endl;
+	// Output: 5
+	
+	std::cout << Erasyl::valueBirth << std::endl; // Вывод моего года рождение и моего nameSpace
+	// Output: 1998
+
+	std::cout << ::g << std::endl; // Вывод переменной из глобальной видимиости 
+	// Output: 100
+	std::cout << g << std::endl; // Вывод переменной из локальной видимости
+	// Output: 1
+
+	using namespace Math;
+
+	std::cout << Math::x << std::endl; 
+	// Если просто оставить х выйдет, берет переменную из main, а если Math::x берет переменную из namespace Math
+	// Output: 79
+	std::cout << y << std::endl; // Переменная вышла
+	// Output: 99
+
+	using namespace Cats;
+	using namespace Dogs;
+
+	namespace nsw = World::Country;
+
+	//std::cout << countQuest << std::endl;
+	//std::cout << countQuest << std::endl;
+	// ничего не вышло, ошибка
+
+	std::cout << Cats::countQuest << std::endl;
+	std::cout << Dogs::countQuest << std::endl;
+
+	std::cout << nsw::city << std::endl; // Вывод выложенных namespace
+	// Output: 101
+
+}
+						</code>
+					</pre>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</section>	
+	
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/highlight.min.js"></script>
+
+</body>
+</html>
